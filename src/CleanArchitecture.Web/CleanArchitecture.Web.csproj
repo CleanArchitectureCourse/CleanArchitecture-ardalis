@@ -22,8 +22,9 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\CleanArchitecture.ApplicationServices\CleanArchitecture.ApplicationServices.csproj" />
-    <ProjectReference Include="..\CleanArchitecture.Infrastructure\CleanArchitecture.Infrastructure.csproj" />
+    <ProjectReference Include="..\CleanArchitecture.ApplicationServices.Implementation\CleanArchitecture.ApplicationServices.Implementation.csproj" />
+    <ProjectReference Include="..\CleanArchitecture.DataAccess\CleanArchitecture.DataAccess.csproj" />
+    <ProjectReference Include="..\CleanArchitecture.Infrastructure.Implementation\CleanArchitecture.Infrastructure.Implementation.csproj" />
   </ItemGroup>
   
   <ItemGroup>

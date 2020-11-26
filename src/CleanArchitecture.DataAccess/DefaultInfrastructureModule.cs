@@ -74,8 +74,7 @@ namespace CleanArchitecture.Infrastructure
                 .AsImplementedInterfaces();
             }
 
-            builder.RegisterType<EmailSender>().As<IEmailSender>()
-                .InstancePerLifetimeScope();
+            
         }
 
         private void RegisterDevelopmentOnlyDependencies(ContainerBuilder builder)

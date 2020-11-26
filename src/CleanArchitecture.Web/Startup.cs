@@ -12,6 +12,7 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Collections.Generic;
 using System.Linq;
+using CleanArchitecture.Core.Interfaces;
 
 namespace CleanArchitecture.Web
 {
@@ -56,7 +57,9 @@ namespace CleanArchitecture.Web
 				// optional - default path to view services is /listallservices - recommended to choose your own path
 				config.Path = "/listservices";
 			});
-		}
+
+            services.AddScoped<IEmailSender, EmailSender>();
+        }
 
 		public void ConfigureContainer(ContainerBuilder builder)
 		{
