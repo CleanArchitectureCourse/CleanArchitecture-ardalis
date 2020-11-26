@@ -16,9 +16,9 @@
     <PackageReference Include="SQLite" Version="3.13.0" />
     <PackageReference Include="NETStandard.Library" Version="2.0.3" />
   </ItemGroup>
-  
+
   <ItemGroup>
-    <ProjectReference Include="..\CleanArchitecture.Core\CleanArchitecture.Core.csproj" />
-    <ProjectReference Include="..\CleanArchitecture.SharedKernel\CleanArchitecture.SharedKernel.csproj" />
+    <ProjectReference Include="..\CleanArchitecture.Entities\CleanArchitecture.Entities.csproj" />
+    <ProjectReference Include="..\CleanArchitecture.Infrastructure.Interfaces\CleanArchitecture.Infrastructure.Interfaces.csproj" />
   </ItemGroup>
 </Project>

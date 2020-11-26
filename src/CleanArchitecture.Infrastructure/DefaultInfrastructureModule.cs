@@ -1,7 +1,6 @@
 ﻿using Autofac;
 using CleanArchitecture.Core;
 using CleanArchitecture.Core.Interfaces;
-using CleanArchitecture.Core.Services;
 using CleanArchitecture.Infrastructure.Data;
 using CleanArchitecture.SharedKernel.Interfaces;
 using MediatR;
