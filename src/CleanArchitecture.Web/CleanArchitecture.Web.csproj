@@ -24,6 +24,7 @@
   </ItemGroup>
   
   <ItemGroup>
+    <ProjectReference Include="..\..\CleanArchitecture.Controllers\CleanArchitecture.Controllers.csproj" />
     <ProjectReference Include="..\..\CleanArchitecture.UseCases\CleanArchitecture.UseCases.csproj" />
     <ProjectReference Include="..\CleanArchitecture.ApplicationServices.Implementation\CleanArchitecture.ApplicationServices.Implementation.csproj" />
     <ProjectReference Include="..\CleanArchitecture.DataAccess\CleanArchitecture.DataAccess.csproj" />
