@@ -12,7 +12,11 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Collections.Generic;
 using System.Linq;
+using AutoMapper;
 using CleanArchitecture.Core.Interfaces;
+using CleanArchitecture.UseCases.TodoItem.Queries.GetToDoItemById;
+using CleanArchitecture.UseCases.TodoItem.Utils;
+using MediatR;
 
 namespace CleanArchitecture.Web
 {
@@ -59,6 +63,8 @@ namespace CleanArchitecture.Web
 			});
 
             services.AddScoped<IEmailSender, EmailSender>();
+            services.AddMediatR(typeof(GetToDoItemByIdQuery));
+            services.AddAutoMapper(typeof(ToDoItemMappingProfile));
         }
 
 		public void ConfigureContainer(ContainerBuilder builder)
