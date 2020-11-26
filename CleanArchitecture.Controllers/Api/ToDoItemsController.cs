@@ -1,7 +1,4 @@
-﻿using CleanArchitecture.Core.Entities;
-using CleanArchitecture.SharedKernel.Interfaces;
-using CleanArchitecture.Web.ApiModels;
-using CleanArchitecture.Web.Filters;
+﻿using CleanArchitecture.Web.ApiModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
